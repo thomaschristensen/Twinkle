@@ -1,0 +1,245 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E41708B153E2184006B56C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E41708A153E2184006B56C7 /* Foundation.framework */; };
+		5E417097153E21A4006B56CA /* Twinkle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E417097153E21A4006B56C9 /* Twinkle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E417097153E21A4006B56CC /* Twinkle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E417097153E21A4006B56CB /* Twinkle.m */; };
+		5E417097153E21A4006B56CF /* Twinkle-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 5E417097153E21A4006B56CE /* Twinkle-Prefix.pch */; };
+		5E417097153E21A4006B56D1 /* TwinkleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E417097153E21A4006B56D0 /* TwinkleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E417087153E2184006B56C7 /* libTwinkle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwinkle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E41708A153E2184006B56C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E417097153E21A4006B56C7 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.md; sourceTree = "<group>"; };
+		5E417097153E21A4006B56C9 /* Twinkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twinkle.h; sourceTree = "<group>"; };
+		5E417097153E21A4006B56CB /* Twinkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twinkle.m; sourceTree = "<group>"; };
+		5E417097153E21A4006B56CE /* Twinkle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Twinkle-Prefix.pch"; sourceTree = "<group>"; };
+		5E417097153E21A4006B56D0 /* TwinkleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwinkleDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E417084153E2184006B56C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E41708B153E2184006B56C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E41707C153E2184006B56C7 = {
+			isa = PBXGroup;
+			children = (
+				5E417097153E21A4006B56C8 /* Code */,
+				5E417097153E21A4006B56CD /* Resources */,
+				5E417089153E2184006B56C7 /* Frameworks */,
+				5E417088153E2184006B56C7 /* Products */,
+				5E417097153E21A4006B56C7 /* Readme.md */,
+			);
+			sourceTree = "<group>";
+		};
+		5E417088153E2184006B56C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E417087153E2184006B56C7 /* libTwinkle.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E417089153E2184006B56C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E41708A153E2184006B56C7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E417097153E21A4006B56C8 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				5E417097153E21A4006B56D0 /* TwinkleDelegate.h */,
+				5E417097153E21A4006B56CB /* Twinkle.m */,
+				5E417097153E21A4006B56C9 /* Twinkle.h */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		5E417097153E21A4006B56CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E417097153E21A4006B56CE /* Twinkle-Prefix.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E417085153E2184006B56C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E417097153E21A4006B56CA /* Twinkle.h in Headers */,
+				5E417097153E21A4006B56D1 /* TwinkleDelegate.h in Headers */,
+				5E417097153E21A4006B56CF /* Twinkle-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E417086153E2184006B56C7 /* Twinkle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E417094153E2184006B56C7 /* Build configuration list for PBXNativeTarget "Twinkle" */;
+			buildPhases = (
+				5E417083153E2184006B56C7 /* Sources */,
+				5E417084153E2184006B56C7 /* Frameworks */,
+				5E417085153E2184006B56C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twinkle;
+			productName = Twinkle;
+			productReference = 5E417087153E2184006B56C7 /* libTwinkle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E41707E153E2184006B56C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Nordija A/S";
+			};
+			buildConfigurationList = 5E417081153E2184006B56C7 /* Build configuration list for PBXProject "Twinkle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E41707C153E2184006B56C7;
+			productRefGroup = 5E417088153E2184006B56C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E417086153E2184006B56C7 /* Twinkle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E417083153E2184006B56C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E417097153E21A4006B56CC /* Twinkle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E417092153E2184006B56C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E417093153E2184006B56C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E417095153E2184006B56C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Twinkle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Resources/Twinkle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E417096153E2184006B56C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Twinkle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Resources/Twinkle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E417081153E2184006B56C7 /* Build configuration list for PBXProject "Twinkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E417092153E2184006B56C7 /* Debug */,
+				5E417093153E2184006B56C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E417094153E2184006B56C7 /* Build configuration list for PBXNativeTarget "Twinkle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E417095153E2184006B56C7 /* Debug */,
+				5E417096153E2184006B56C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E41707E153E2184006B56C7 /* Project object */;
+}

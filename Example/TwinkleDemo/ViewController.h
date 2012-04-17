@@ -1,0 +1,34 @@
+//
+//  ViewController.h
+//  TwinkleDemo
+//
+//  Created by Thomas Christensen on 18/04/12.
+//  Copyright 2012 Nordija A/S
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+#import <UIKit/UIKit.h>
+#import "TwinkleDelegate.h"
+
+@interface ViewController : UIViewController <UIAlertViewDelegate, TwinkleDelegate>
+
+@property(weak, nonatomic) IBOutlet UILabel *productVersionLabel;
+@property(weak, nonatomic) IBOutlet UILabel *buildNumberLabel;
+@property(weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property(weak, nonatomic) IBOutlet UILabel *nextBuildNumberLabel;
+@property(weak, nonatomic) IBOutlet UILabel *nextProductVersionLabel;
+
+- (IBAction)checkVersion:(id)sender;
+
+@end
