@@ -5,7 +5,8 @@ new version's plist and pop's up a notification to the viewer, potentially leadi
 
 ## How To Get Started
 
-``` - (IBAction)checkVersion:(id)sender {
+``` objective-c
+- (IBAction)checkVersion:(id)sender {
     self.productVersionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     self.buildNumberLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     Twinkle *twinkle = [[Twinkle alloc] initWithAppPlistURL:[[NSURL alloc] initWithString:APP_PLIST_URL]];
