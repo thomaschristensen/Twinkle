@@ -21,7 +21,7 @@
 #import "ViewController.h"
 #import "Twinkle.h"
 
-#define APP_PLIST_URL @"http://dl.dropbox.com/u/10001969/IOS/twinkle/TwinkleDemo.plist"
+#define APP_PLIST_URL @"http://www.mydomain.com/twinkle/TwinkleDemo.plist"
 
 @implementation ViewController
 @synthesize productVersionLabel;

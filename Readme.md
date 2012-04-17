@@ -6,6 +6,8 @@ new version's plist and pop's up a notification to the viewer, potentially leadi
 ## How To Get Started
 
 ``` objective-c
+#define APP_PLIST_URL @"http://www.mydomain.com/twinkle/TwinkleDemo.plist"
+
 - (IBAction)checkVersion:(id)sender {
     self.productVersionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     self.buildNumberLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
@@ -36,3 +38,6 @@ The library builds upon the priciple of treating CFBundleShortVersionString as p
 
 ## Background
 Enterprise Distributed applications are placed on a web server and installed directly from there, outside of the Apple appstore. This approach hinders the user to be automatically notified when there are new versions of the app available. By using the library, that can be automated.
+
+## Demo
+The library consists of only a few calls. See the included simple demo application for more information.
