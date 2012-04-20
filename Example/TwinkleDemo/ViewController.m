@@ -21,7 +21,7 @@
 #import "ViewController.h"
 #import "Twinkle.h"
 
-#define APP_PLIST_URL @"http://www.mydomain.com/twinkle/TwinkleDemo.plist"
+#define APP_PLIST_URL @"http://dl.dropbox.com/u/10001969/IOS/twinkle/TwinkleDemo.plist"
 
 @implementation ViewController
 @synthesize productVersionLabel;
@@ -39,16 +39,7 @@
     [super viewDidUnload];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self checkVersion:nil];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-- (IBAction)checkVersion:(id)sender {
+- (void)backgroundCheckVersion:(id)backgroundCheckVersion {
     self.productVersionLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     self.buildNumberLabel.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
     Twinkle *twinkle = [[Twinkle alloc] initWithAppPlistURL:[[NSURL alloc] initWithString:APP_PLIST_URL]];
@@ -56,6 +47,19 @@
     self.nextProductVersionLabel.text = twinkle.serverProductVersion;
     self.nextBuildNumberLabel.text = twinkle.serverBuildNumber;
     self.statusLabel.text = twinkle.lastStatusMessage;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self performSelectorInBackground:@selector(backgroundCheckVersion:) withObject:nil];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)checkVersion:(id)sender {
+    [self performSelectorInBackground:@selector(backgroundCheckVersion:) withObject:nil];
 }
 
 - (void)newVersionDetected:(NSString *)message {
