@@ -91,8 +91,10 @@
 
     if ([response statusCode] == 200) {
         NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfURL:self.appPlistURL];
-        _serverProductVersion = [dictionary objectForKey:@"CFBundleShortVersionString"];
-        _serverBuildNumber = [dictionary objectForKey:@"CFBundleVersion"];
+        NSArray *items = [dictionary objectForKey:@"items"];
+        NSDictionary *metadata = [[items objectAtIndex:0] objectForKey:@"metadata"];
+        _serverProductVersion = [metadata objectForKey:@"bundle-version"];
+        _serverBuildNumber = [metadata objectForKey:@"bundle-build-number"];
 
         // Get new values as integers
         NSArray *newMajorMinor = [self convertToMajorMinor:self.serverProductVersion];
