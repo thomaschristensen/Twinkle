@@ -65,8 +65,10 @@
         [out appendString:num.stringValue];
         first = false;
     }
-    [out appendString:@" - "];
-    [out appendString:buildNumber.stringValue];
+    if(buildNumber) {
+        [out appendString:@" - "];
+        [out appendString:buildNumber.stringValue];
+    }
     return out;
 }
 
